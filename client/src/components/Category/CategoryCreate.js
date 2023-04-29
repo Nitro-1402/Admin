@@ -6,8 +6,7 @@ const CategoryCreate = (props) => {
     <Create title='Create a Actor' {...props}>
       <SimpleForm>
         <TextInput source='title' />
-        <TextInput multiline source='body' />
-        <DateInput label='Published' source='publishedAt' />
+        <DateInput label='Published' source='publish_date' />
       </SimpleForm>
     </Create>
   )

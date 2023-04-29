@@ -5,10 +5,8 @@ const CategoryEdit = (props) => {
   return (
     <Edit title='Edit Actor' {...props}>
       <SimpleForm>
-        <TextInput disabled source='id' />
         <TextInput source='title' />
-        <TextInput multiline source='body' />
-        <DateInput label='Published' source='publishedAt' />
+        <DateInput label='Published' source='publish_date' />
       </SimpleForm>
     </Edit>
   )

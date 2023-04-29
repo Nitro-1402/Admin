@@ -8,18 +8,18 @@ import {
   DeleteButton,
 } from 'react-admin'
 
-const NewsList = (props) => {
+const CommentList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source='id' />
-        <TextField source='title' />
-        <DateField source='publishedAt' />
-        <EditButton basePath='/Actors' />
-        <DeleteButton basePath='/Actors' />
+        <TextField source='body' />
+        <DateField source='publish_date' />
+        {/* <EditButton basePath='/Comments' /> */}
+        <DeleteButton basePath='/Comments' />
       </Datagrid>
     </List>
   )
 }
 
-export default NewsList
+export default CommentList

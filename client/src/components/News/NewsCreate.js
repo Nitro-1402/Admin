@@ -8,8 +8,9 @@ const NewsCreate = (props) => {
       <SimpleForm>
         <TextInput source='title' />
         <TextInput multiline source='description' />
+        <DateInput label='Published' source='publish_date' />
         <ImageInput source="photo" label="Related pictures">
-            <ImageField source="thumbnail" />
+            <ImageField source="photo" />
         </ImageInput>
       </SimpleForm>
     </Create>

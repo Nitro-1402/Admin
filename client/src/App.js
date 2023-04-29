@@ -25,7 +25,7 @@ function App() {
       <Resource
         name='users'
         list={UserList}
-        create={UserCreate}
+        // create={UserCreate}
         edit={UserEdit}
       />
       <Resource 
@@ -34,7 +34,7 @@ function App() {
         create={PostCreate}
         edit={PostEdit}
       />
-      <Resource dataProvider={restProvider('http://localhost:1337/api/posts')}
+      <Resource
         name='actors'
         list={ActorList}
         create={ActorCreate}

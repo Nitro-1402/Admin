@@ -6,16 +6,19 @@ import {
   DateField,
   EditButton,
   DeleteButton,
+  ImageField
 } from 'react-admin'
 
 const PostList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id' />
-        <TextField source='title' />
-        <DateField source='publishedAt' />
-        <EditButton basePath='/posts' />
+        <TextField source='id'/>
+        {/* <ImageField source="photo"/> */}
+        <TextField source='title'/>
+        <TextField multiline source='description' />
+        <DateField source='publish_date' />
+        <EditButton basePath='/posts'/>
         <DeleteButton basePath='/posts' />
       </Datagrid>
     </List>

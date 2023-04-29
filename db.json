@@ -1,45 +1,75 @@
 {
   "posts": [
     {
-      "id": "3",
-      "title": "Post Three",
-      "body": "This is the post body",
-      "publishedAt": "10-01-2020"
+      "id": "1",
+      "title": "Poker face",
+      "description": "This is the poker body",
+      "publish_date": "10-01-2020"
+    },
+    {
+      "title": "spiderman",
+      "description": "he returned home with pride",
+      "publish_date": "2023-04-29",
+      "poster": {
+        "rawFile": {
+          "path": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
+        },
+        "photo": "blob:http://localhost:3000/d8cfee30-3219-45ad-ba30-d2b9d7a051c1",
+        "title": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
+      },
+      "id": "TJ9WQuc"
     }
   ],
   "users": [
     {
-      "name": "Ali ",
-      "email": "Kontratchi",
-      "id": 1
+      "id": 1,
+      "username": "ali",
+      "password": "aliii@kontratchi",
+      "email": "Kontratchi@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "mohammad",
+      "password": "mohammad@javadi",
+      "email": "javadi@gmail.com"
     }
   ],
   "news": [
     {
       "id": "1",
       "title": "ironman death",
-      "body": "ironman died",
-      "publishedAt": "10-01-2020"
+      "description": "ironman died",
+      "photo": "",
+      "thumbnail": "",
+      "publish_date": "10-01-2020"
     }
   ],
   "categories": [
     {
-      "name": "mistry",
-      "id": 1
+      "id": 1,
+      "title": "COMIC",
+      "publish_date": "2023-04-29"
     }
   ],
   "actors": [
     {
-      "name": "علی کنتراتچی",
-      "body":"متولد 1381",
-      "publishedAt": "2023-04-11",
-      "id": 1
+      "id": 1,
+      "name": "ali",
+      "photo": "",
+      "bio": "hibye",
+      "birth_date": "2023-04-29"
     }
   ],
   "comments": [
     {
-      "name": "mistry",
-      "id": 1
+      "id": 1,
+      "body": "it was great",
+      "publish_date": "2023-04-29"
+    },
+    {
+      "id": 2,
+      "body": "it was bad",
+      "publish_date": "2023-04-29"
     }
   ]
 }

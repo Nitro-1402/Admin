@@ -5,10 +5,9 @@ const ActorEdit = (props) => {
   return (
     <Edit title='Edit Actor' {...props}>
       <SimpleForm>
-        <TextInput disabled source='id' />
-        <TextInput source='title' />
-        <TextInput multiline source='body' />
-        <DateInput label='Published' source='publishedAt' />
+        <TextInput source='name' />
+        <TextInput multiline source='bio' />
+        <DateInput label='publish_date' source='birth_date' />
       </SimpleForm>
     </Edit>
   )

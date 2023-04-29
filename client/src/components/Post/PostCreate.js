@@ -7,12 +7,11 @@ const PostCreate = (props) => {
     <Create title='Create a Post' {...props}>
       <SimpleForm>
         <TextInput source='title' />
-        <TextInput multiline source='body' />
-        <DateInput label='Published' source='publishedAt' />
-        <ImageInput source="pictures" label="Related pictures">
-            <ImageField source="src" title="title" />
+        <TextInput multiline source='description' />
+        <DateInput label='Published' source='publish_date' />
+        <ImageInput source="poster" label="Related pictures">
+            <ImageField source="photo" title="title" />
         </ImageInput>
-        
       </SimpleForm>
     </Create>
   )
