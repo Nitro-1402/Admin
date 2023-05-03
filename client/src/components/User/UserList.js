@@ -12,9 +12,9 @@ const UserList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id' />
-        <TextField source='username' />
-        <EmailField source='email' />
+        <TextField source='id' label="آیدی" />
+        <TextField source='username' label="نام کاربری"/>
+        <EmailField source='email' label="ایمیل"/>
         {/* <EditButton basePath='/users' /> */}
         <DeleteButton basePath='/users' />
       </Datagrid>

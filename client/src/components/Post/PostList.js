@@ -13,11 +13,11 @@ const PostList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id'/>
+        <TextField source='id' label="آیدی"/>
         {/* <ImageField source="photo"/> */}
-        <TextField source='title'/>
-        <TextField multiline source='description' />
-        <DateField source='publish_date' />
+        <TextField source='title' label="عنوان"/>
+        <TextField multiline source='description' label="توضیحات"/>
+        <DateField source='publish_date' label="تاریخ انتشار" />
         <EditButton basePath='/posts'/>
         <DeleteButton basePath='/posts' />
       </Datagrid>

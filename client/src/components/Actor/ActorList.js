@@ -12,9 +12,9 @@ const ActorList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id' />
-        <TextField source='name' />
-        <DateField source='birth_date' />
+        <TextField source='id' label="آیدی"/>
+        <TextField source='name' label="نام بازیگر"/>
+        <DateField source='birth_date' label='تاریخ تولد'/>
         <EditButton basePath='/Actors' />
         <DeleteButton basePath='/Actors' />
       </Datagrid>

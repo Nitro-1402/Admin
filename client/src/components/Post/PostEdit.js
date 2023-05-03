@@ -3,12 +3,12 @@ import { Edit, SimpleForm, TextInput, DateInput,ImageField,ImageInput } from 're
 
 const PostEdit = (props) => {
   return (
-    <Edit title='Edit Post' {...props}>
+    <Edit title='ویرایش پست' {...props}>
       <SimpleForm>
-        <TextInput source='title' />
-        <TextInput multiline source='description' />
-        <DateInput label='Published' source='publish_date' />
-        <ImageInput source="photo" label="Related pictures">
+        <TextInput source='title' label="عنوان" />
+        <TextInput multiline source='description' label="توضیحات"/>
+        <DateInput label='تاریخ انتشار' source='publish_date' />
+        <ImageInput source="photo" label="عکس">
             <ImageField source="photo" />
         </ImageInput>
       </SimpleForm>

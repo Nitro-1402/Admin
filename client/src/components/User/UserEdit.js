@@ -3,11 +3,11 @@ import { Edit, SimpleForm, TextInput,PasswordInput } from 'react-admin'
 
 const UserEdit = (props) => {
   return (
-    <Edit title='Edit User' {...props}>
+    <Edit title='ویرایش کاربران' {...props}>
       <SimpleForm>
-        <TextInput source='username' />
-        <PasswordInput source='password'/>
-        <TextInput source='email' />
+        <TextInput source='username' label="نام کاربری"/>
+        <PasswordInput source='password' label="رمز"/>
+        <TextInput source='email'label="ایمیل" />
       </SimpleForm>
     </Edit>
   )

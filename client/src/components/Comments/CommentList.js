@@ -12,9 +12,9 @@ const CommentList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id' />
-        <TextField source='body' />
-        <DateField source='publish_date' />
+        <TextField source='id' label="آیدی"/>
+        <TextField source='body' label="نظرات" />
+        <DateField source='publish_date' label="تاریخ انتشار"/>
         {/* <EditButton basePath='/Comments' /> */}
         <DeleteButton basePath='/Comments' />
       </Datagrid>

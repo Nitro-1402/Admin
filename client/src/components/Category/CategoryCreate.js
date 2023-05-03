@@ -3,10 +3,10 @@ import { Create, SimpleForm, TextInput, DateInput } from 'react-admin'
 
 const CategoryCreate = (props) => {
   return (
-    <Create title='Create a Actor' {...props}>
+    <Create title='ایجاد دسته' {...props}>
       <SimpleForm>
-        <TextInput source='title' />
-        <DateInput label='Published' source='publish_date' />
+        <TextInput source='title' label="ژانر "/>
+        <DateInput  source='publish_date' label="تاریخ انتشار" />
       </SimpleForm>
     </Create>
   )

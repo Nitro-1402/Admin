@@ -17,13 +17,21 @@ import NewsList from './components/News/NewsList'
 import NewsCreate from './components/News/NewsCreate'
 import NewsEdit from './components/News/NewsEdit'
 import CommentList from './components/Comments/CommentList'
+import farsiMessages from 'ra-language-farsi';
+import polyglotI18nProvider from 'ra-i18n-polyglot';
 
+const messages = {
+    'fa': farsiMessages,
+};
+document.getElementsByTagName("body")[0].setAttribute('dir', 'rtl');
+const i18nProvider = polyglotI18nProvider(locale => messages[locale], 'fa');
 
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://localhost:3000')}>
+    <Admin dataProvider={restProvider('http://localhost:3000')} i18nProvider={i18nProvider}>
+      
       <Resource
-        name='users'
+        name='Users'
         list={UserList}
         // create={UserCreate}
         edit={UserEdit}

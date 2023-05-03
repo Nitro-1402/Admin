@@ -4,12 +4,12 @@ import { ImageInput, ImageField } from 'react-admin';
 
 const PostCreate = (props) => {
   return (
-    <Create title='Create a Post' {...props}>
+    <Create title='ایجاد پست' {...props}>
       <SimpleForm>
-        <TextInput source='title' />
-        <TextInput multiline source='description' />
-        <DateInput label='Published' source='publish_date' />
-        <ImageInput source="poster" label="Related pictures">
+        <TextInput source='title' label="عنوان"/>
+        <TextInput multiline source='description' label="توضیحات" />
+        <DateInput label='تاریخ انتشار' source='publish_date' />
+        <ImageInput source="poster" label="عکس">
             <ImageField source="photo" title="title" />
         </ImageInput>
       </SimpleForm>

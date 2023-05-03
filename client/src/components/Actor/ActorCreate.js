@@ -7,10 +7,10 @@ const ActorCreate = (props) => {
   return (
     <Create title='Create a Actor' {...props}>
       <SimpleForm>
-        <TextInput source='name' />
-        <TextInput multiline source='bio' />
-        <DateInput label='Published' source='birth_date' />
-        <ImageInput source="pictures" label="Related pictures">
+        <TextInput source='name' label="نام بازیگر" />
+        <TextInput multiline source='bio' label="توضیحات"/>
+        <DateInput label='تاریخ تولد' source='birth_date' />
+        <ImageInput source="pictures" label="عکس">
           <ImageField source="photo" title="title" />
         </ImageInput>
       </SimpleForm>

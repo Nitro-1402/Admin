@@ -13,11 +13,11 @@ const NewsList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source='id' />
+        <TextField source='id' label="آیدی" />
         {/* <ImageField source="photo" /> */}
-        <TextField source='title' />
-        <DateField source='publish_date' />
-        <EditButton basePath='/Actors' />
+        <TextField source='title' label="عنوان"/>
+        <DateField source='publish_date' label="تاریخ انتشار"/>
+        <EditButton basePath='/Actors'/>
         <DeleteButton basePath='/Actors' />
       </Datagrid>
     </List>

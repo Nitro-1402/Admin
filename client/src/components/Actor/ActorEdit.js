@@ -3,11 +3,11 @@ import { Edit, SimpleForm, TextInput, DateInput } from 'react-admin'
 
 const ActorEdit = (props) => {
   return (
-    <Edit title='Edit Actor' {...props}>
+    <Edit title='ویرایش بازیگران ...' {...props}>
       <SimpleForm>
-        <TextInput source='name' />
-        <TextInput multiline source='bio' />
-        <DateInput label='publish_date' source='birth_date' />
+        <TextInput source='name' label="نام بازیگر" />
+        <TextInput multiline source='bio' label="توضیحات" />
+        <DateInput source='birth_date' label='تاریخ تولد'/>
       </SimpleForm>
     </Edit>
   )
