@@ -44,31 +44,6 @@
         "title": "pexels-michael-block-3225517.jpg"
       },
       "id": "p1PuroI"
-    },
-    {
-      "title": "dff",
-      "description": "errg",
-      "publish_date": "2023-04-06",
-      "poster": {
-        "rawFile": {
-          "path": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
-        },
-        "photo": "blob:http://localhost:3000/8fe876b0-78d0-45f7-819b-b64c133e9485",
-        "title": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
-      },
-      "id": "E843wS_"
-    },
-    {
-      "title": "d",
-      "description": "x",
-      "publish_date": "2023-05-02",
-      "id": "cvFk_1I",
-      "photo": {
-        "rawFile": {
-          "path": "pexels-michael-block-3225517.jpg"
-        },
-        "photo": "blob:http://localhost:3000/25337009-e13f-464e-b898-992673dd7121"
-      }
     }
   ],
   "users": [
@@ -132,19 +107,6 @@
       "bio": "efefe",
       "birth_date": "2023-04-21",
       "id": 2
-    },
-    {
-      "name": "cs",
-      "bio": "as",
-      "birth_date": "2023-05-25",
-      "pictures": {
-        "rawFile": {
-          "path": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
-        },
-        "photo": "blob:http://localhost:3000/9086c32c-ce8b-4900-ab14-d0af76dbb098",
-        "title": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
-      },
-      "id": 3
     }
   ],
   "comments": [
