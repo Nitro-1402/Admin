@@ -19,16 +19,31 @@ import NewsEdit from './components/News/NewsEdit'
 import CommentList from './components/Comments/CommentList'
 import farsiMessages from 'ra-language-farsi';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
-
+import {ShowGuesser } from 'react-admin';
+import jsonServerProvider from 'ra-data-json-server';
 const messages = {
     'fa': farsiMessages,
 };
 document.getElementsByTagName("body")[0].setAttribute('dir', 'rtl');
 const i18nProvider = polyglotI18nProvider(locale => messages[locale], 'fa');
 
+var httpClient = async (url,option)=>{
+  const d = await fetch(url,{
+    ...option,
+  })
+  var data = await d.json()
+  console.log(data)
+  return Promise.resolve({
+    status: d.ok,
+    headers: {},
+    body: data,
+    json: {},
+  })
+} 
+
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://localhost:3000')} i18nProvider={i18nProvider}>
+    <Admin dataProvider={restProvider('http://nitroback.pythonanywhere.com')} i18nProvider={i18nProvider}>
       
       <Resource
         name='Users'
@@ -37,7 +52,7 @@ function App() {
         edit={UserEdit}
       />
       <Resource 
-        name='Posts'
+        name='movies/movies/'
         list={PostList}
         create={PostCreate}
         edit={PostEdit}
