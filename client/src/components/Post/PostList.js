@@ -1,4 +1,6 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
+
 import {
   List,
   Datagrid,
@@ -24,5 +26,46 @@ const PostList = (props) => {
     </List>
   )
 }
+
+
+// function PostList(){
+//   const [items,setItems] = useState([])
+
+//   useEffect(() => {
+//       const payroll = async () => {
+//           const url = 'https://nitroback.pythonanywhere.com/movies/categories/';
+//           const data = {
+//           //   "amount": getamountdetail.amount,
+//           //   "description": getamountdetail.description
+//           }
+//           // console.log(data);
+//           const headers = {
+//             'Content-Type': 'application/json',
+//             'Authorization': "Bearer " + localStorage.getItem("accessToken")
+//           }
+//           const response = await fetch(url, {
+//             headers: headers
+//           });
+//           const d = await response.json()
+//           setItems(d)
+//           // window.location.replace(response.data.paymentUrl);
+//         }
+//         payroll()
+//   },[])
+  
+//   return(
+//     <div>
+//       {
+//       items.results? items.results.map((i)=>(
+//            <CreatePostList key={i} image={i.poster} name={i.title}/>
+//        )):undefined
+//       }
+//     </div>
+
+    
+//   )
+// }
+
+
 
 export default PostList

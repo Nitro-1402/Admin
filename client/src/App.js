@@ -21,6 +21,7 @@ import farsiMessages from 'ra-language-farsi';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import {ShowGuesser } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
+
 const messages = {
     'fa': farsiMessages,
 };
@@ -52,7 +53,7 @@ function App() {
         edit={UserEdit}
       />
       <Resource 
-        name='movies/movies/'
+        name='Posts'
         list={PostList}
         create={PostCreate}
         edit={PostEdit}
