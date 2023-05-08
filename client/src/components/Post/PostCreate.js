@@ -1,3 +1,4 @@
+import { Input } from "@material-ui/core";
 import React from "react";
 import {
   Create,
@@ -46,18 +47,42 @@ const PostCreate = (props) => {
             { id: 3, name: "People" },
           ]}
         />
+        <TextInput multiline source="description" label="توضیحات" />
+        <DateInput label="تاریخ انتشار" source="publish_date" />
 
-        <ImageInput source="poster" accept="image/*">
-        <ImageField source="src" title="title" />
-        </ImageInput>
 
-        <FileInput source="thumbnail">
-            <FileField source="thumbnail" title="نمیدانم" />
+        <input name="thumbnail" type="file"></input>
+  
+
+        <FileInput source="poster" label="Related files" accept="">
+          <FileField source="src" title="title" />
         </FileInput>
 
-        <TextInput multiline source="description" label="توضیحات" />
 
-        <DateInput label="تاریخ انتشار" source="publish_date" />
+
+
+
+
+
+        {/* <ImageInput source="poster" label="پوستر فیلم" accept="image/*">
+            <ImageField source="src" title="title" />
+        </ImageInput> */}
+
+        {/* <FileInput source="thumbnail" label="عکس">
+            <FileField source="thumbnail" title="نمیدانم" />
+        </FileInput> */}
+
+
+        {/* <FileInput source="poster">
+            <FileField source="poster" title="photo" />
+        </FileInput> */}
+
+
+
+
+
+
+
       </SimpleForm>
     </Create>
   );
