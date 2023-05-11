@@ -1,4 +1,6 @@
 import React,{ useEffect, useState } from 'react'
+import axios from 'axios'
+
 import {
   List,
   Datagrid,
@@ -20,7 +22,6 @@ import {
    TableBody,
    TableCell,
 } from '@mui/material';
-import axios from 'axios'
 
 function CreateCategoryList(props){
 console.log(props)
