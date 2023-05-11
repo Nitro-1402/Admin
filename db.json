@@ -1,119 +1,119 @@
-{
-  "posts": [
-    {
-      "title": "spiderman",
-      "description": "he returned home with pride",
-      "publish_date": "2023-04-29",
-      "poster": {
-        "rawFile": {
-          "path": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
-        },
-        "photo": "blob:http://localhost:3000/d8cfee30-3219-45ad-ba30-d2b9d7a051c1",
-        "title": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
-      },
-      "id": "TJ9WQuc"
-    },
-    {
-      "title": "mohammad sadeq",
-      "description": "djdlk",
-      "publish_date": "2023-04-07",
-      "poster": {
-        "rawFile": {
-          "path": "dave-hoefler-DBGb9u1Yf6Q-unsplash.jpg"
-        },
-        "photo": "blob:http://localhost:3000/e10bebf9-b844-43b1-94a7-502799bf163c",
-        "title": "dave-hoefler-DBGb9u1Yf6Q-unsplash.jpg"
-      },
-      "id": "B6Vt2qF"
-    },
-    {
-      "title": "df",
-      "description": "dfd",
-      "publish_date": "2023-04-19",
-      "id": "SAxrAln"
-    },
-    {
-      "title": "ddj",
-      "description": "lkjdljd",
-      "publish_date": "2023-04-15",
-      "poster": {
-        "rawFile": {
-          "path": "pexels-michael-block-3225517.jpg"
-        },
-        "photo": "blob:http://localhost:3000/8a8dbbe4-55dc-444e-b33d-8fac934e3d5a",
-        "title": "pexels-michael-block-3225517.jpg"
-      },
-      "id": "p1PuroI"
-    }
-  ],
-  "users": [
-    {
-      "id": 2,
-      "username": "mohammad",
-      "password": "mohammad@javadi",
-      "email": "javadi@gmail.com"
-    }
-  ],
-  "news": [
-    {
-      "id": "1",
-      "title": "ironman death",
-      "description": "ironman died",
-      "photo": "",
-      "thumbnail": "",
-      "publish_date": "10-01-2020"
-    },
-    {
-      "title": "ddsg",
-      "description": "gsfdfdg",
-      "publish_date": "2023-04-13",
-      "photo": {
-        "rawFile": {
-          "path": "image.png (3).jpeg"
-        },
-        "photo": "blob:http://localhost:3000/375bce53-42ac-4283-8868-5d0e6210a67a"
-      },
-      "id": "niZbONK"
-    },
-    {
-      "title": "بیبیمنت",
-      "id": "VzPOL61"
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "title": "COMIC",
-      "publish_date": "2023-04-29"
-    }
-  ],
-  "actors": [
-    {
-      "id": 1,
-      "name": "ali",
-      "photo": "",
-      "bio": "سلام و خسته نباشید",
-      "birth_date": "2023-04-29"
-    },
-    {
-      "pictures": {
-        "rawFile": {
-          "path": "pexels-michael-block-3225517.jpg"
-        },
-        "photo": "blob:http://localhost:3000/b3645ebb-e972-4c7b-8986-620e903d74f2",
-        "title": "pexels-michael-block-3225517.jpg"
-      },
-      "name": "eefe",
-      "bio": "efefe",
-      "birth_date": "2023-04-21",
-      "id": 2
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "it was great",
-      "publish_date": "2023-04-29"
-    }
-  ]
-}
+// {
+//   "posts": [
+//     {
+//       "title": "spiderman",
+//       "description": "he returned home with pride",
+//       "publish_date": "2023-04-29",
+//       "poster": {
+//         "rawFile": {
+//           "path": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
+//         },
+//         "photo": "blob:http://localhost:3000/d8cfee30-3219-45ad-ba30-d2b9d7a051c1",
+//         "title": "photography-landscape-nature-mountains-wallpaper-preview.jpg"
+//       },
+//       "id": "TJ9WQuc"
+//     },
+//     {
+//       "title": "mohammad sadeq",
+//       "description": "djdlk",
+//       "publish_date": "2023-04-07",
+//       "poster": {
+//         "rawFile": {
+//           "path": "dave-hoefler-DBGb9u1Yf6Q-unsplash.jpg"
+//         },
+//         "photo": "blob:http://localhost:3000/e10bebf9-b844-43b1-94a7-502799bf163c",
+//         "title": "dave-hoefler-DBGb9u1Yf6Q-unsplash.jpg"
+//       },
+//       "id": "B6Vt2qF"
+//     },
+//     {
+//       "title": "df",
+//       "description": "dfd",
+//       "publish_date": "2023-04-19",
+//       "id": "SAxrAln"
+//     },
+//     {
+//       "title": "ddj",
+//       "description": "lkjdljd",
+//       "publish_date": "2023-04-15",
+//       "poster": {
+//         "rawFile": {
+//           "path": "pexels-michael-block-3225517.jpg"
+//         },
+//         "photo": "blob:http://localhost:3000/8a8dbbe4-55dc-444e-b33d-8fac934e3d5a",
+//         "title": "pexels-michael-block-3225517.jpg"
+//       },
+//       "id": "p1PuroI"
+//     }
+//   ],
+//   "users": [
+//     {
+//       "id": 2,
+//       "username": "mohammad",
+//       "password": "mohammad@javadi",
+//       "email": "javadi@gmail.com"
+//     }
+//   ],
+//   "news": [
+//     {
+//       "id": "1",
+//       "title": "ironman death",
+//       "description": "ironman died",
+//       "photo": "",
+//       "thumbnail": "",
+//       "publish_date": "10-01-2020"
+//     },
+//     {
+//       "title": "ddsg",
+//       "description": "gsfdfdg",
+//       "publish_date": "2023-04-13",
+//       "photo": {
+//         "rawFile": {
+//           "path": "image.png (3).jpeg"
+//         },
+//         "photo": "blob:http://localhost:3000/375bce53-42ac-4283-8868-5d0e6210a67a"
+//       },
+//       "id": "niZbONK"
+//     },
+//     {
+//       "title": "بیبیمنت",
+//       "id": "VzPOL61"
+//     }
+//   ],
+//   "categories": [
+//     {
+//       "id": 1,
+//       "title": "COMIC",
+//       "publish_date": "2023-04-29"
+//     }
+//   ],
+//   "actors": [
+//     {
+//       "id": 1,
+//       "name": "ali",
+//       "photo": "",
+//       "bio": "سلام و خسته نباشید",
+//       "birth_date": "2023-04-29"
+//     },
+//     {
+//       "pictures": {
+//         "rawFile": {
+//           "path": "pexels-michael-block-3225517.jpg"
+//         },
+//         "photo": "blob:http://localhost:3000/b3645ebb-e972-4c7b-8986-620e903d74f2",
+//         "title": "pexels-michael-block-3225517.jpg"
+//       },
+//       "name": "eefe",
+//       "bio": "efefe",
+//       "birth_date": "2023-04-21",
+//       "id": 2
+//     }
+//   ],
+//   "comments": [
+//     {
+//       "id": 1,
+//       "body": "it was great",
+//       "publish_date": "2023-04-29"
+//     }
+//   ]
+// }

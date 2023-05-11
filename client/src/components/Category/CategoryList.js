@@ -1,5 +1,6 @@
-import React from 'react'
-import { useEffect, useState } from 'react';
+import React,{ useEffect, useState } from 'react'
+import axios from 'axios'
+
 import {
   List,
   Datagrid,
@@ -9,7 +10,19 @@ import {
   DeleteButton,
   
 } from 'react-admin'
-import axios from 'axios'
+import { Title, useGetList } from 'react-admin';
+import {
+    Card,
+    TextField as MuiTextField,
+    Button,
+    Toolbar,
+   Table,
+   TableHead,
+   TableRow,
+   TableBody,
+   TableCell,
+} from '@mui/material';
+
 function CreateCategoryList(props){
 console.log(props)
   return (
@@ -25,8 +38,15 @@ console.log(props)
 }
 
 function CategoryList(){
-  const [items,setItems] = useState()
-
+  const [items,setItems] = useState([])
+  const [filter, setFilter] = useState('');
+  const [page, setPage] = useState(1);
+  const perPage = 10;
+  // const { data, total, isLoading } = useGetList('movies/categories/', {
+  //     filter: { q: filter },
+  //     pagination: { page, perPage },
+  //     sort: { field: 'id', order: 'ASC' }
+  // });
   useEffect(() => {
       const payroll = async () => {
           const url = 'https://nitroback.pythonanywhere.com/movies/categories/';
@@ -42,31 +62,21 @@ function CategoryList(){
         axios.get(url,{
             headers: headers
           }).then(x=>{
+            console.log(x)
             setItems(x.data.results)
           }) }
         payroll()
   },[])
-  
-  return(
-    <div>
-      <List
-    basePath={"/movies/categories/"}
-    resource={""}
-    
-    >
-      <Datagrid>
-      
-      {
-      items? items.map((i)=>(
-           <CreateCategoryList key={i.id} title={i.title}/>
-       )):undefined
-      }
-      </Datagrid>
-      </List>
-    </div>
-
-    
-  )
+//   if (isLoading) {
+//     return <div>Loading...</div>;
+// }
+    return (
+      <div>
+        {items.map(item=>(
+          <div key={item.id}>{item.title}</div>
+        ))}
+      </div>
+  );
 }
 
 export default CategoryList

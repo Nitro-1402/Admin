@@ -44,40 +44,40 @@ var httpClient = async (url,option)=>{
 
 function App() {
   return (
-    <Admin dataProvider={restProvider('http://nitroback.pythonanywhere.com')} i18nProvider={i18nProvider}>
+    <Admin dataProvider={restProvider('http://nitroback.pythonanywhere.com/')} i18nProvider={i18nProvider}>
       
       <Resource
-        name='Users'
+        name='auth/users/'
         list={UserList}
         // create={UserCreate}
-        edit={UserEdit}
+        // edit={UserEdit}
       />
       <Resource 
-        name='Posts'
+        name='movies/movies/'
         list={PostList}
         create={PostCreate}
         edit={PostEdit}
       />
       <Resource
-        name='actors'
+        name='ََmovies/actors/'
         list={ActorList}
         create={ActorCreate}
         edit={ActorEdit}
       />
       <Resource
-        name='categories'
+        name='movies/Categories/'
         list={CategoryList}
         create={CategoryCreate}
         edit={CategoryEdit}
       />
       <Resource
-        name='news'
+        name='movies/News/'
         list={NewsList}
         create={NewsCreate}
         edit={NewsEdit}
       />
       <Resource
-        name='comments'
+        name='comments/comments/'
         list={CommentList}
       />
 
