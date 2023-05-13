@@ -7,6 +7,7 @@ import {
   DateField,
   EditButton,
   DeleteButton,
+  ShowButton,
 } from 'react-admin'
 import axios from 'axios';
 
@@ -59,10 +60,30 @@ function ActorList(){
 //     return <div>Loading...</div>;
 // }
     return (
-      <div>
+      <div style={{textAlign:'right'}}>
+        <div style={{margin:'60px 100px'}}>
+          <div style={{margin:'30px',display:'flex',flexDirection:'row',justifyContent:'space-between'}}>
+            <span style={{}}> آیدی </span>
+            <span style={{textAlign:'right', direction:'rtl'}}> عنوان </span>
+            <span style={{marginRight:'480px',marginLeft:'165px'}}> تاریخ انتشار </span>
+            <span> </span>
+          </div>
         {items.map(item=>(
-          <div key={item.id}>{item.name}</div>
+          <div 
+          key={item.id}
+          style={{margin:'30px',padding:'20px 0',display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center', borderBottom:'1px solid #C1BFB5',borderTop:'1px solid #C1BFB5',textAlign:'right'}}
+          >
+            <span style={{}}>{item.id}</span>
+            <span style={{textAlign:'right', direction:'rtl', width:'250px'}}>{item.name}</span>
+            <span style={{marginRight:'250px'}}> 1402/02/23 </span>
+            <span>
+            <EditButton basePath='/posts'/>
+            <DeleteButton basePath='/posts'/>
+            <ShowButton/>
+            </span>
+            </div>
         ))}
+        </div>
       </div>
   );
 }

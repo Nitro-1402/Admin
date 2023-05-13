@@ -21,6 +21,9 @@ import farsiMessages from 'ra-language-farsi';
 import polyglotI18nProvider from 'ra-i18n-polyglot';
 import {ShowGuesser } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
+import DirectorList from './components/Director/DirectorList'
+import DirectorCreate from './components/Director/DirectorCreate'
+import DirectorEdit from './components/Director/DirectorEdit'
 
 const messages = {
     'fa': farsiMessages,
@@ -63,6 +66,12 @@ function App() {
         list={ActorList}
         create={ActorCreate}
         edit={ActorEdit}
+      />
+      <Resource
+        name='ََmovies/directors/'
+        list={DirectorList}
+        create={DirectorCreate}
+        edit={DirectorEdit}
       />
       <Resource
         name='movies/Categories/'

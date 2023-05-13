@@ -1,7 +1,5 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import axios from 'axios';
-
 import {
   List,
   Datagrid,
@@ -9,26 +7,26 @@ import {
   DateField,
   EditButton,
   DeleteButton,
-  ImageField,
   ShowButton,
 } from 'react-admin'
+import axios from 'axios';
 
-// const PostList = (props) => {
+// const ActorList = (props) => {
 //   return (
 //     <List {...props}>
 //       <Datagrid>
 //         <TextField source='id' label="آیدی"/>
-//         {/* <ImageField source="photo"/> */}
-//         <TextField source='title' label="عنوان"/>
-//         <TextField multiline source='description' label="توضیحات"/>
-//         <DateField source='publish_date' label="تاریخ انتشار" />
-//         <EditButton basePath='/posts'/>
-//         <DeleteButton basePath='/posts' />
+//         <TextField source='name' label="نام بازیگر"/>
+//         <DateField source='birth_date' label='تاریخ تولد'/>
+//         <EditButton basePath='/Actors' />
+//         <DeleteButton basePath='/Actors' />
 //       </Datagrid>
 //     </List>
 //   )
 // }
-function PostList(){
+
+// export default ActorList
+function ActorList(){
   const [items,setItems] = useState([])
   const [filter, setFilter] = useState('');
   const [page, setPage] = useState(1);
@@ -40,7 +38,7 @@ function PostList(){
   // });
   useEffect(() => {
       const payroll = async () => {
-          const url = 'https://nitroback.pythonanywhere.com/movies/movies/';
+          const url = 'https://nitroback.pythonanywhere.com/movies/directors/';
           const data = {
           //   "amount": getamountdetail.amount,
           //   "description": getamountdetail.description
@@ -76,7 +74,7 @@ function PostList(){
           style={{margin:'30px',padding:'20px 0',display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center', borderBottom:'1px solid #C1BFB5',borderTop:'1px solid #C1BFB5',textAlign:'right'}}
           >
             <span style={{}}>{item.id}</span>
-            <span style={{textAlign:'right', direction:'rtl', width:'250px'}}>{item.title}</span>
+            <span style={{textAlign:'right', direction:'rtl', width:'250px'}}>{item.name}</span>
             <span style={{marginRight:'250px'}}> 1402/02/23 </span>
             <span>
             <EditButton basePath='/posts'/>
@@ -89,4 +87,4 @@ function PostList(){
       </div>
   );
 }
-export default PostList
+export default ActorList
