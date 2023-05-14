@@ -77,8 +77,9 @@ function ActorList(){
             <span style={{textAlign:'right', direction:'rtl', width:'250px'}}>{item.name}</span>
             <span style={{marginRight:'250px'}}> 1402/02/23 </span>
             <span>
-            <EditButton basePath='/posts'/>
-            <DeleteButton basePath='/posts'/>
+            {/* <EditButton/> */}
+            <a href=''></a>
+            <DeleteButton basePath='/movies/actors/'/>
             <ShowButton/>
             </span>
             </div>
